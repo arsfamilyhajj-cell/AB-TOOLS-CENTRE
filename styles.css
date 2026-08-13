@@ -1,0 +1,73 @@
+:root{
+  --bg:#0c0e10;--panel:#15191c;--panel2:#1c2125;--text:#f4f4f1;--muted:#a9afb2;
+  --line:#30363a;--orange:#f47a16;--orange2:#ff9b35;--steel:#c9ced0;--max:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f4f4f2;color:#17191b;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(var(--max),calc(100% - 40px));margin:auto}
+.topbar{background:#080909;color:#bfc3c4;font-size:12px;border-bottom:1px solid #232628}
+.topbar-inner{display:flex;justify-content:space-between;padding:8px 0}
+.site-header{position:sticky;top:0;z-index:50;background:rgba(12,14,16,.94);backdrop-filter:blur(12px);border-bottom:1px solid #272b2e}
+.nav-wrap{display:flex;align-items:center;justify-content:space-between;min-height:78px}
+.brand img{width:170px;height:58px;object-fit:contain;object-position:left center}
+.nav{display:flex;align-items:center;gap:24px;color:#d8dcdd;font-size:14px;font-weight:700}
+.nav a:hover{color:var(--orange2)}
+.nav-edit{border:1px solid #51585c;background:#202529;color:white;border-radius:6px;padding:10px 14px;font-weight:800;cursor:pointer}
+.menu-toggle{display:none;background:none;border:0;color:#fff;font-size:26px}
+.hero{background:radial-gradient(circle at 78% 35%,#30363a 0,#111416 34%,#090a0b 70%);color:white;padding:90px 0 80px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:50px}
+.eyebrow{display:inline-block;color:var(--orange2);font-size:12px;font-weight:900;letter-spacing:2px;margin-bottom:12px}
+.hero h1{font-size:clamp(44px,6vw,76px);line-height:1.02;letter-spacing:-3px;margin:0 0 24px;max-width:760px}
+.hero p{color:#c3c7c8;max-width:680px;font-size:18px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:30px 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:5px;padding:13px 20px;font-weight:900;border:1px solid transparent;cursor:pointer}
+.btn-primary{background:var(--orange);color:#111}
+.btn-primary:hover{background:var(--orange2)}
+.btn-outline{border-color:#697176;color:white}
+.btn-muted{background:#30363a;color:#fff}
+.hero-points{display:flex;gap:20px;flex-wrap:wrap;color:#b6bcbe;font-size:13px;font-weight:700}
+.hero-card{border:1px solid #4b5255;background:linear-gradient(145deg,#1e2427,#090a0b);padding:25px;box-shadow:0 30px 80px rgba(0,0,0,.45);transform:rotate(1deg)}
+.hero-card img{width:100%;display:block}
+.hero-card-label{text-align:center;color:var(--orange2);font-weight:900;letter-spacing:2px;font-size:12px;margin-top:12px}
+.trust-strip{background:var(--orange);color:#111}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.trust-grid div{padding:20px;border-right:1px solid rgba(0,0,0,.18);display:flex;gap:12px;align-items:center}
+.trust-grid strong{font-size:12px;opacity:.65}.trust-grid span{font-weight:900}
+.section{padding:90px 0}
+.section-head{max-width:760px;margin-bottom:38px}
+.section-head h2,.welding-grid h2,.about-grid h2,.cta h2,.contact-grid h2{font-size:clamp(32px,4vw,52px);line-height:1.08;letter-spacing:-1.8px;margin:0 0 14px}
+.section-head p{color:#666d70;margin:0}
+.category-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.category-card{padding:28px;background:white;border:1px solid #dfe2e2;min-height:260px;display:flex;flex-direction:column}
+.category-card.featured{border-top:5px solid var(--orange)}
+.category-icon{font-size:34px;margin-bottom:24px}
+.category-card h3{margin:0 0 8px;font-size:21px}.category-card p{color:#687073;font-size:14px}.category-card a{margin-top:auto;color:#c45705;font-weight:900;font-size:13px}
+.dark-section{background:#0d0f10;color:#fff}
+.light h2{color:#fff}.light p{color:#aeb4b6}
+.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.product-card{background:#171b1e;border:1px solid #2b3034;overflow:hidden}
+.product-image{height:190px;display:flex;flex-direction:column;justify-content:center;align-items:center;position:relative;background:radial-gradient(circle,#41484c,#1a1f22 65%,#0d0f10);color:white}
+.product-image span{font-size:10px;letter-spacing:2px;color:var(--orange2);font-weight:900}.product-image b{font-size:34px;letter-spacing:3px}
+.tool-drill{background:linear-gradient(135deg,#282d30,#111315)}.tool-grinder{background:linear-gradient(135deg,#343a3e,#121516)}.tool-welder{background:linear-gradient(135deg,#4a2b17,#131515)}.tool-kit{background:linear-gradient(135deg,#30363a,#111315)}
+.product-body{padding:22px}.tag{font-size:10px;color:var(--orange2);letter-spacing:1.5px;font-weight:900}.product-body h3{margin:7px 0;font-size:19px}.product-body p{color:#aeb4b6;font-size:13px}.product-body a{color:#fff;font-weight:900;font-size:13px}
+.welding-section{background:#e9e9e6}
+.welding-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.welding-grid p{color:#5e6568;max-width:640px}
+.check-list{padding:0;margin:28px 0;list-style:none}.check-list li{margin:11px 0;font-weight:700}.check-list li:before{content:"✓";color:var(--orange);font-weight:900;margin-right:10px}
+.welding-panel{min-height:420px;background:#0e1011;border:12px solid #24292c;display:grid;place-items:center;position:relative;overflow:hidden}
+.welding-panel:after{content:"";position:absolute;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(72,158,255,.4),transparent 60%);filter:blur(20px)}
+.spark{position:absolute;top:20%;font-size:80px;color:#d7f1ff;text-shadow:0 0 35px #55baff;z-index:2}
+.welding-box{z-index:3;border:2px solid #7b8387;padding:40px;text-align:center;background:rgba(15,17,18,.9)}.welding-box span{font-size:64px;color:var(--orange);font-weight:1000}.welding-box strong{display:block;color:white;letter-spacing:5px;font-size:22px}.welding-box small{color:#9ca3a6;letter-spacing:2px}
+.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#d9ddde;border:1px solid #d9ddde}
+.service-grid article{background:white;padding:30px;min-height:230px}.service-grid span{color:var(--orange);font-weight:900}.service-grid h3{font-size:20px}.service-grid p{color:#687073;font-size:14px}
+.about-section{background:#111416;color:white}.about-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:70px;align-items:center}.about-grid p{color:#aeb4b6}.about-stat{border:1px solid #3e4548;min-height:350px;display:flex;flex-direction:column;justify-content:center;align-items:center;background:linear-gradient(145deg,#23292c,#0b0d0e)}.about-stat strong{font-size:110px;line-height:1;color:var(--orange)}.about-stat span{font-weight:1000;letter-spacing:6px}.about-stat small{color:#90979a;letter-spacing:2px;margin-top:12px}
+.about-highlights{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:30px}.about-highlights div{border-left:2px solid var(--orange);padding-left:14px}.about-highlights b{display:block}.about-highlights span{font-size:12px;color:#9ea5a8}
+.cta{background:var(--orange);padding:55px 0}.cta-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}.cta h2{max-width:760px}.cta .eyebrow{color:#17191b}
+.contact-section{background:#f5f5f3}.contact-grid{display:grid;grid-template-columns:1fr .9fr;gap:70px}.contact-list{margin-top:28px;border-top:1px solid #d8dcdd}.contact-list div{padding:14px 0;border-bottom:1px solid #d8dcdd}.contact-list span{display:block;color:#7a8184;font-size:10px;font-weight:900;letter-spacing:1.5px}.contact-list strong{font-size:15px}
+.contact-form{background:white;border:1px solid #dfe2e2;padding:30px;box-shadow:0 15px 40px rgba(0,0,0,.06)}.contact-form h3{margin-top:0;font-size:24px}.contact-form label{display:block;font-size:12px;font-weight:900;margin:15px 0}.contact-form input,.contact-form textarea{display:block;width:100%;border:1px solid #ccd1d2;padding:12px;margin-top:6px;font:inherit;border-radius:4px}.contact-form small{display:block;color:#7a8184;margin-top:12px}
+footer{background:#080909;color:#b5bbbd;padding-top:50px}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;padding-bottom:45px}.footer-logo{width:190px}.footer-grid p{font-size:12px}.footer-grid h4{color:white;margin-top:0}.footer-grid a{display:block;font-size:13px;margin:8px 0}.footer-bottom{border-top:1px solid #24282a;padding:18px 0;font-size:12px}
+.editor{position:fixed;right:0;top:0;height:100vh;width:min(460px,100%);background:#111416;color:#fff;z-index:100;transform:translateX(100%);transition:.25s ease;box-shadow:-20px 0 60px rgba(0,0,0,.4);overflow:auto}.editor.open{transform:translateX(0)}.editor-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:90;opacity:0;pointer-events:none;transition:.2s}.editor-backdrop.open{opacity:1;pointer-events:auto}.editor-head{display:flex;justify-content:space-between;padding:25px;border-bottom:1px solid #2c3235}.editor-head h2{margin:0}.editor-head button{background:none;color:#fff;border:0;font-size:34px;cursor:pointer}.editor-body{padding:25px}.editor-body label{display:block;font-size:11px;font-weight:900;color:#c3c8ca;margin:14px 0}.editor-body input,.editor-body textarea{width:100%;margin-top:6px;background:#1c2124;border:1px solid #3b4246;color:white;padding:11px;border-radius:4px;font:inherit}.editor-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.editor-note,.editor-small{font-size:12px;color:#9da5a8}.editor-body code{color:var(--orange2)}
+@media(max-width:950px){.nav{gap:13px}.category-grid,.product-grid,.service-grid{grid-template-columns:repeat(2,1fr)}.hero-grid,.welding-grid,.contact-grid,.about-grid{grid-template-columns:1fr}.about-stat{min-height:260px}.cta-inner{flex-direction:column;align-items:flex-start}}
+@media(max-width:760px){.container{width:min(var(--max),calc(100% - 28px))}.topbar-inner{display:none}.menu-toggle{display:block}.nav{display:none;position:absolute;left:0;right:0;top:78px;background:#0d0f10;padding:18px;flex-direction:column;align-items:stretch;border-bottom:1px solid #30363a}.nav.open{display:flex}.nav a,.nav-edit{text-align:center;padding:10px}.hero{padding:60px 0}.hero h1{font-size:48px}.trust-grid{grid-template-columns:1fr 1fr}.trust-grid div{border-bottom:1px solid rgba(0,0,0,.18)}.category-grid,.product-grid,.service-grid,.about-highlights{grid-template-columns:1fr}.section{padding:65px 0}.footer-grid{grid-template-columns:1fr}.hero-card{order:-1}}
